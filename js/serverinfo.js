@@ -1,4 +1,4 @@
-fetch("/servers")
+fetch("https://api.playerservers.com/servers")
   .then(response => response.json())
   .then(json => {
     var servers = json.servers
@@ -8,7 +8,7 @@ fetch("/servers")
   					var node = document.createElement('div')
   					node.insertAdjacentHTML("beforeend", `<div class="server" id="s-${server.name}">
   					<div id="title">
-  						<img src="https://i.znci.cf/aspiired.cf/csi/${server.displayitem}.png" width="24" alt=""> ${server.name}</div>
+  						<img src="https://old.znci.dev/aspiired.cf/csi/${server.displayitem}.png" width="24" alt=""> ${server.name}</div>
   					<p id="players"><span id="panton">Online</span> ${server.onlinePlayers}/${server.maxPlayers}</p>
   					<p id="playerslist"><span id="panton">Players</span> ${server.players.join(", ")}</p>
   					<p id="boosters"><span id="panton">Boosters</span> ${server.boosters}</p>
