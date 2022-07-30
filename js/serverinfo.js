@@ -1,4 +1,4 @@
-fetch("https://api.playerservers.com/servers")
+fetch("https://thingproxy.freeboard.io/fetch/https://api.playerservers.com/servers")
   .then(response => response.json())
   .then(json => {
     var servers = json.servers
