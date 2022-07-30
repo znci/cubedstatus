@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+.docsContainer {
+	text-align: left;
+	background-color: #003366c0;
+	width: 600px;
+	margin-top: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 20px;
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.docsContainer .link {
+  display: flex;
+  font-weight: 900;
+}
+
+#get::before {
+  content: 'GET';
+  background-color: #17a2b8;
+  padding: 2px;
+  border-radius: 3px;
+}
